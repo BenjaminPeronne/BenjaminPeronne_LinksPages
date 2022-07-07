@@ -2,14 +2,115 @@
 <html lang="en">
 
 <head>
+	<!-- Meta -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Benjamin Peronne</title>
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="main.css">
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			VANTA.BIRDS({
+				el: "#vanta",
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 200.00,
+				minWidth: 200.00,
+				scale: 1.00,
+				scaleMobile: 1.00,
+				backgroundAlpha: 0.0,
+				color2: 0xff00f0,
+				wingSpan: 40.00,
+				separation: 100.00,
+				alignment: 77.00,
+				cohesion: 5.00,
+				quantity: 1.00
+			})
+
+			setTimeout(() => {
+				const main = document.querySelector('main');
+				main.style.opacity = 1;
+				main.style.filter = 'blur(0px)';
+			}, 1000);
+
+		})
+	</script>
+
+	<title>Benjamin Peronne - Links</title>
 </head>
 
 <body>
+	<div id="vanta"></div>
 
+	<main>
+		<header>
+			<img src="./img/pictureOfMe.jpeg" alt="pictureOfMe">
+			<h1>@BenjaminPeronne</h1>
+		</header>
+		<ul>
+			<li>
+				<a href="http://benjaminperonne.fr">
+					<img src="./img/icons8-home-office-50.png" alt="Home">
+					Official Website
+				</a>
+			</li>
+
+			<li>
+				<a href="https://benjaminperonne.github.io/BenjaminPeronneV2_GIT/">
+					<img src="./img/icons8-home-office-50.png" alt="Home">
+					My new "beta" Website
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.facebook.com/Benjamin.L.Peronne/">
+					<img src="./img/icons8-facebook.svg" alt="Facebook">
+					Facebook
+				</a>
+			</li>
+
+			<li>
+				<a href="https://twitter.com/BenjaminPeronn1">
+					<img src="./img/icons8-twitter.svg" alt="Twitter">
+					Twitter
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.instagram.com/benjamin.peronne/">
+					<img src="./img/icons8-instagram.svg" alt="Instagram">
+					Instagram
+				</a>
+			</li>
+
+			<li>
+				<a href="https://www.linkedin.com/in/aymerick-lauretta-peronne-195a291a7/?originalSubdomain=gp">
+					<img src="./img/icons8-linkedin.svg" alt="Linkedin">
+					Linkedin
+				</a>
+			</li>
+
+			<li>
+				<a href="https://wa.me/0690249689">
+					<img src="./img/icons8-whatsapp.svg" alt="WhatsApp">
+					WhatsApp
+				</a>
+			</li>
+
+			<li>
+				<a href="https://open.spotify.com/user/1288069568?si=6743620eeb6841e2">
+					<img src="./img/icons8-spotify-48.png" alt="Spotify">
+					Spotify
+				</a>
+			</li>
+		</ul>
+	</main>
 </body>
 
 </html>
